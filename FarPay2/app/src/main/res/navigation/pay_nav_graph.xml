@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pay_nav_graph"
+    app:startDestination="@id/payStep1Fragment">
+
+    <fragment
+        android:id="@+id/payStep1Fragment"
+        android:name="com.farpay.app.ui.pay.PayStep1Fragment"
+        android:label="PayStep1">
+        <action
+            android:id="@+id/action_step1_to_step2"
+            app:destination="@id/payStep2Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/payStep2Fragment"
+        android:name="com.farpay.app.ui.pay.PayStep2Fragment"
+        android:label="PayStep2">
+        <argument
+            android:name="payerName"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="amount"
+            app:argType="string"
+            android:defaultValue="0" />
+        <argument
+            android:name="description"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+</navigation>

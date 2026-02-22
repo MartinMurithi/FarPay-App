@@ -74,4 +74,54 @@
     <string name="welcome_back">Welcome back</string>
     <string name="start_making_payments_in_minutes">Start making payments in minutes</string>
     <string name="pesapal">PesaPal</string>
+
+    <!-- ===== Pay Flow ===== -->
+    <string name="pay_title">Make a Payment</string>
+    <string name="pay_step1_title">Your Details</string>
+    <string name="pay_step2_title">Payment Method</string>
+    <string name="pay_step_indicator">Step %1$d of 2</string>
+    <string name="pay_secure_note">🔒  256-bit SSL encrypted</string>
+
+    <!-- Step 1 -->
+    <string name="label_amount_kes">Amount (KES)</string>
+    <string name="label_description_optional">Description (optional)</string>
+    <string name="label_description_hint">e.g. Invoice #0042</string>
+    <string name="action_continue">Continue</string>
+    <string name="quick_amount_500">KES 500</string>
+    <string name="quick_amount_1k">KES 1,000</string>
+    <string name="quick_amount_2500">KES 2,500</string>
+    <string name="quick_amount_5k">KES 5,000</string>
+    <string name="quick_amount_10k">KES 10,000</string>
+
+    <!-- Step 2 -->
+    <string name="pay_choose_method">Choose how to pay</string>
+    <string name="pay_method_subtitle">Select your preferred payment method</string>
+    <string name="pay_summary_title">Summary</string>
+    <string name="pay_summary_paying_as">Paying as</string>
+    <string name="pay_summary_amount">Amount</string>
+    <string name="pay_summary_fee">Processing fee</string>
+    <string name="pay_summary_total">Total</string>
+    <string name="pay_fee_free">Free</string>
+    <string name="action_pay_now">Pay Now</string>
+    <string name="action_change">Change</string>
+    <string name="pay_via">Paying via</string>
+
+    <!-- Methods -->
+    <string name="method_pesapal">PesaPal</string>
+    <string name="method_pesapal_desc">M-Pesa, Airtel Money &amp; more</string>
+    <string name="method_pesapal_badge">Popular</string>
+    <string name="method_card">Visa / Mastercard</string>
+    <string name="method_card_desc">Debit or credit card</string>
+    <string name="method_card_badge">Instant</string>
+    <string name="method_bank">Bank Transfer</string>
+    <string name="method_bank_desc">Direct from your bank account</string>
+
+    <!-- Errors -->
+    <string name="error_enter_amount">Enter a valid amount</string>
+    <string name="error_amount_min">Minimum amount is KES 10</string>
+
+    <!-- Content descriptions -->
+    <string name="cd_pay_method_icon">Payment method icon</string>
+    <string name="cd_selected">Selected</string>
+    <string name="cd_not_selected">Not selected</string>
 </resources>

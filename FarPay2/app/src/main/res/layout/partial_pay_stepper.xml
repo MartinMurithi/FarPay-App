@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    2-step progress indicator strip.
+    White background, sits between the header and the fragment container.
+    Update from Activity: toggle step backgrounds + connector tint + label colors.
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="2dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/screen_padding"
+    android:paddingVertical="14dp">
+
+    <!-- ── Step 1 circle ── -->
+    <FrameLayout
+        android:layout_width="32dp"
+        android:layout_height="32dp">
+
+        <View
+            android:id="@+id/step1_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_step_active" />
+
+        <!-- Number — hidden when done -->
+        <TextView
+            android:id="@+id/step1_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sora_bold"
+            android:text="1"
+            android:textColor="@color/navy_900"
+            android:textSize="13sp" />
+
+        <!-- Checkmark — visible when done -->
+        <ImageView
+            android:id="@+id/step1_check"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_check_circle"
+            android:visibility="gone"
+            app:tint="@color/white"
+            xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+    </FrameLayout>
+
+    <!-- Step 1 label -->
+    <TextView
+        android:id="@+id/step1_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:text="@string/pay_step1_title"
+        android:textColor="@color/text_primary"
+        android:textSize="12sp" />
+
+    <!-- Connector -->
+    <View
+        android:id="@+id/step_connector"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_weight="1"
+        android:background="@color/grey_200" />
+
+    <!-- ── Step 2 circle ── -->
+    <FrameLayout
+        android:layout_width="32dp"
+        android:layout_height="32dp">
+
+        <View
+            android:id="@+id/step2_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_step_inactive" />
+
+        <TextView
+            android:id="@+id/step2_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sora_bold"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </FrameLayout>
+
+    <!-- Step 2 label -->
+    <TextView
+        android:id="@+id/step2_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:text="@string/pay_step2_title"
+        android:textColor="@color/text_hint"
+        android:textSize="12sp" />
+
+</LinearLayout>
