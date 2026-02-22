@@ -27,7 +27,7 @@
         <activity
             android:name=".PayActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
+            android:theme="@style/Theme.FarPay"  android:windowSoftInputMode="adjustResize" />
 
     </application>
 

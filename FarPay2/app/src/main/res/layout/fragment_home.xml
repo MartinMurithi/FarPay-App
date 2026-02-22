@@ -11,66 +11,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- Header -->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/header_height"
-            android:background="@drawable/bg_header"
-            android:paddingHorizontal="@dimen/screen_padding"
-            android:paddingVertical="12dp">
-
-            <ImageView
-                android:id="@+id/btn_settings"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/bg_icon_circle_dark"
-                android:contentDescription="@string/cd_settings"
-                android:padding="10dp"
-                android:src="@drawable/ic_settings"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:tint="@color/grey_200" />
-
-            <TextView
-                android:id="@+id/tv_logo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/app_name"
-                android:textAppearance="@style/TextAppearance.FarPay.Logo"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <FrameLayout
-                android:id="@+id/btn_notifications"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/bg_icon_circle_dark"
-                    android:contentDescription="@string/cd_notifications"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_notifications"
-                    app:tint="@color/grey_200" />
-
-                <View
-                    android:id="@+id/notification_badge"
-                    android:layout_width="@dimen/badge_size"
-                    android:layout_height="@dimen/badge_size"
-                    android:layout_gravity="end|top"
-                    android:layout_margin="6dp"
-                    android:background="@drawable/bg_badge"
-                    android:visibility="visible" />
-            </FrameLayout>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <!-- Scrollable content -->
         <androidx.core.widget.NestedScrollView
@@ -118,13 +58,6 @@
 
     </LinearLayout>
 
-    <!-- Bottom Navigation -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        style="@style/Widget.FarPay.BottomNav"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/bottom_nav_height"
-        android:layout_gravity="bottom"
-        app:menu="@menu/bottom_nav_menu" />
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

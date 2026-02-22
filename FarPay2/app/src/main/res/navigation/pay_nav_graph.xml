@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/payStep1Fragment"
-        android:name="com.farpay.app.ui.pay.PayStep1Fragment"
+        android:name="com.example.farpay.PayStep1Fragment"
         android:label="PayStep1">
         <action
             android:id="@+id/action_step1_to_step2"
@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/payStep2Fragment"
-        android:name="com.farpay.app.ui.pay.PayStep2Fragment"
+        android:name="com.example.farpay.PayStep2Fragment"
         android:label="PayStep2">
         <argument
             android:name="payerName"
