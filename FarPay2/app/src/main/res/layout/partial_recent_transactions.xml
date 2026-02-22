@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/screen_padding"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/sora_bold"
+            android:text="@string/label_recent_transactions"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/dm_sans_medium"
+            android:text="@string/action_see_all"
+            android:textColor="@color/brand_accent"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.FarPay.Card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/screen_padding"
+        app:cardCornerRadius="20dp"
+        app:contentPadding="0dp"
+        app:strokeColor="@color/grey_100"
+        app:strokeWidth="1dp">
+
+        <!-- Replace with RecyclerView in production:
+             android:id="@+id/rv_transactions"
+             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+             android:nestedScrollingEnabled="false" -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_transaction" />
+
+            <View android:layout_width="match_parent" android:layout_height="@dimen/divider_height"
+                android:layout_marginHorizontal="16dp" android:background="@color/divider" />
+
+            <include layout="@layout/item_transaction" />
+
+            <View android:layout_width="match_parent" android:layout_height="@dimen/divider_height"
+                android:layout_marginHorizontal="16dp" android:background="@color/divider" />
+
+            <include layout="@layout/item_transaction" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

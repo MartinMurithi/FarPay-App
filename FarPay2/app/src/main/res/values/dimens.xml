@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Screen -->
+    <dimen name="screen_padding">20dp</dimen>
+    <dimen name="screen_padding_small">16dp</dimen>
+    <dimen name="screen_padding_large">24dp</dimen>
+
+    <!-- Cards -->
+    <dimen name="card_padding">20dp</dimen>
+    <dimen name="card_padding_small">14dp</dimen>
+    <dimen name="card_corner_large">24dp</dimen>
+    <dimen name="card_corner_medium">16dp</dimen>
+    <dimen name="card_corner_small">10dp</dimen>
+
+    <!-- Spacing scale -->
+    <dimen name="section_spacing">24dp</dimen>
+    <dimen name="item_spacing_large">16dp</dimen>
+    <dimen name="item_spacing">12dp</dimen>
+    <dimen name="item_spacing_small">8dp</dimen>
+    <dimen name="item_spacing_xsmall">4dp</dimen>
+
+    <!-- Components -->
+    <dimen name="button_height">54dp</dimen>
+    <dimen name="button_height_small">40dp</dimen>
+    <dimen name="input_height">56dp</dimen>
+    <dimen name="bottom_nav_height">72dp</dimen>
+    <dimen name="header_height">130dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+
+    <!-- Icons -->
+    <dimen name="icon_size_xlarge">40dp</dimen>
+    <dimen name="icon_size_large">32dp</dimen>
+    <dimen name="icon_size_medium">24dp</dimen>
+    <dimen name="icon_size_small">20dp</dimen>
+    <dimen name="icon_size_xsmall">16dp</dimen>
+
+    <!-- Avatars / circles -->
+    <dimen name="action_icon_container">52dp</dimen>
+    <dimen name="avatar_size_large">56dp</dimen>
+    <dimen name="avatar_size_medium">44dp</dimen>
+    <dimen name="avatar_size_small">36dp</dimen>
+
+    <!-- Elevation -->
+    <dimen name="elevation_card">4dp</dimen>
+    <dimen name="elevation_card_raised">12dp</dimen>
+    <dimen name="elevation_fab">8dp</dimen>
+    <dimen name="elevation_bottom_nav">0dp</dimen>
+
+    <!-- Misc -->
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="stroke_thin">1dp</dimen>
+    <dimen name="stroke_normal">1.5dp</dimen>
+    <dimen name="stroke_thick">2dp</dimen>
+    <dimen name="badge_size">8dp</dimen>
+    <dimen name="badge_size_large">18dp</dimen>
+    <dimen name="bottom_nav_content_padding">88dp</dimen>
+</resources>

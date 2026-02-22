@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sora_bold"
+        android:text="@string/label_pay_with"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp"
+        android:paddingHorizontal="@dimen/screen_padding" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingHorizontal="@dimen/screen_padding"
+        android:paddingTop="14dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- PesaPal -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/method_pesapal"
+                style="@style/Widget.FarPay.Card.Clickable"
+                android:layout_width="140dp"
+                android:layout_height="88dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="16dp"
+                app:contentPadding="0dp"
+                app:strokeColor="@color/brand_accent"
+                app:strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_pesapal"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/dm_sans_medium"
+                        android:text="@string/label_pesapal"
+                        android:textColor="@color/text_primary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Visa / Mastercard -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/method_card"
+                style="@style/Widget.FarPay.Card.Clickable"
+                android:layout_width="140dp"
+                android:layout_height="88dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="16dp"
+                app:contentPadding="0dp"
+                app:strokeColor="@color/border_default"
+                app:strokeWidth="1.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView android:layout_width="28dp" android:layout_height="18dp"
+                            android:src="@drawable/ic_visa" android:contentDescription="@null" />
+                        <ImageView android:layout_width="28dp" android:layout_height="18dp"
+                            android:layout_marginStart="4dp"
+                            android:src="@drawable/ic_mastercard" android:contentDescription="@null" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/dm_sans_medium"
+                        android:text="@string/label_card"
+                        android:textColor="@color/text_primary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Bank Transfer -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/method_bank"
+                style="@style/Widget.FarPay.Card.Clickable"
+                android:layout_width="140dp"
+                android:layout_height="88dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="16dp"
+                app:contentPadding="0dp"
+                app:strokeColor="@color/border_default"
+                app:strokeWidth="1.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_bank"
+                        android:contentDescription="@null"
+                        app:tint="@color/navy_800" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/dm_sans_medium"
+                        android:text="@string/label_bank_transfer"
+                        android:textColor="@color/text_primary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

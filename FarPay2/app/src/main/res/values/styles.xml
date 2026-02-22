@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Shape.FarPay" parent="ShapeAppearance.MaterialComponents.MediumComponent" />
+
+    <style name="TextAppearance.FarPay" parent="TextAppearance.MaterialComponents.Body1" />
+
+    <style name="Widget.FarPay" parent="android:Widget" />
+
+
+
+    <!-- ============================
+         SHAPES
+    ============================= -->
+    <style name="Shape.FarPay.ExtraLarge">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">28dp</item>
+    </style>
+
+    <style name="Shape.FarPay.Large">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="Shape.FarPay.Medium">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">14dp</item>
+    </style>
+
+    <style name="Shape.FarPay.Small">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="Shape.FarPay.Pill">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Shape.FarPay.BottomSheetTop">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">24dp</item>
+        <item name="cornerSizeTopRight">24dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="Shape.FarPay.Snackbar">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <!-- ============================
+         BUTTONS
+    ============================= -->
+
+    <!-- Primary — teal fill, dark text -->
+    <style name="Widget.FarPay.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/brand_accent</item>
+        <item name="android:textColor">@color/text_on_teal</item>
+<!--        <item name="TextAppearance">@style/TextAppearance.FarPay.Button</item>-->
+
+        <item name="android:textAppearance">@style/TextAppearance.FarPay.Button</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:minHeight">54dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="elevation">0dp</item>
+        <item name="rippleColor">@color/brand_accent_dark</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">8dp</item>
+    </style>
+
+    <!-- Secondary — outlined -->
+    <style name="Widget.FarPay.Button.Secondary" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/border_default</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textAppearance">@style/TextAppearance.FarPay.Button</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:minHeight">54dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="rippleColor">#0A000000</item>
+    </style>
+
+    <!-- Dark — navy fill -->
+    <style name="Widget.FarPay.Button.Dark" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/navy_800</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.FarPay.Button</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:minHeight">54dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="elevation">0dp</item>
+        <item name="rippleColor">#1AFFFFFF</item>
+    </style>
+
+    <!-- Text / Ghost -->
+    <style name="Widget.FarPay.Button.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/brand_accent</item>
+        <item name="android:textAppearance">@style/TextAppearance.FarPay.Button</item>
+        <item name="rippleColor">#1A00D4AA</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Destructive — red fill -->
+    <style name="Widget.FarPay.Button.Destructive" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/error</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.FarPay.Button</item>
+        <item name="android:minHeight">54dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!-- Dialog buttons -->
+    <style name="Widget.FarPay.Button.DialogPositive" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/brand_accent</item>
+        <item name="android:textAppearance">@style/TextAppearance.FarPay.Button</item>
+        <item name="rippleColor">#1A00D4AA</item>
+    </style>
+
+    <style name="Widget.FarPay.Button.DialogNegative" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textAppearance">@style/TextAppearance.FarPay.Button</item>
+    </style>
+
+    <!-- ============================
+         TEXT INPUT
+    ============================= -->
+    <style name="Widget.FarPay.TextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/input_stroke_color</item>
+        <item name="boxStrokeWidth">1.5dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="hintTextColor">@color/selector_hint_color</item>
+        <item name="hintTextAppearance">@style/TextAppearance.FarPay.Caption</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.FarPay.Caption</item>
+        <item name="errorTextAppearance">@style/TextAppearance.FarPay.Caption.Error</item>
+        <item name="startIconTint">@color/input_icon_tint</item>
+        <item name="endIconTint">@color/input_icon_tint</item>
+        <item name="counterTextAppearance">@style/TextAppearance.FarPay.Caption</item>
+        <item name="counterOverflowTextAppearance">@style/TextAppearance.FarPay.Caption.Error</item>
+    </style>
+
+    <!-- Dense / Pill (search bars) -->
+    <style name="Widget.FarPay.TextInput.Dense" parent="Widget.FarPay.TextInput">
+        <item name="boxCornerRadiusBottomEnd">24dp</item>
+        <item name="boxCornerRadiusBottomStart">24dp</item>
+        <item name="boxCornerRadiusTopEnd">24dp</item>
+        <item name="boxCornerRadiusTopStart">24dp</item>
+    </style>
+
+    <!-- ============================
+         CARDS
+         NOTE: Do not set contentPadding in style —
+         set app:contentPadding="0dp" directly in layout XML.
+    ============================= -->
+    <style name="Widget.FarPay.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/grey_100</item>
+    </style>
+
+    <style name="Widget.FarPay.Card.Elevated" parent="Widget.FarPay.Card">
+        <item name="cardElevation">8dp</item>
+        <item name="cardMaxElevation">12dp</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="Widget.FarPay.Card.Clickable" parent="Widget.FarPay.Card">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="Widget.FarPay.Card.Dark" parent="Widget.FarPay.Card">
+        <item name="cardBackgroundColor">@color/navy_800</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <!-- ============================
+         BOTTOM NAVIGATION
+         itemIconActiveColor does NOT exist as an XML attr — active icon color
+         is controlled by state_checked=true in bottom_nav_icon_color.xml.
+    ============================= -->
+    <style name="Widget.FarPay.BottomNav" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_icon_color</item>
+        <item name="itemTextColor">@color/bottom_nav_icon_color</item>
+<!--        <item name="itemIconTint">@color/bottom_nav_icon_color</item>-->
+        <item name="itemTextAppearanceActive">@style/TextAppearance.FarPay.NavLabel</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.FarPay.NavLabel</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="elevation">0dp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:background">@color/nav_background</item>
+        <item name="itemIconSize">24dp</item>
+        <item name="itemPaddingTop">8dp</item>
+        <item name="itemPaddingBottom">4dp</item>
+    </style>
+
+    <!-- ============================
+         TOOLBAR
+    ============================= -->
+    <style name="Widget.FarPay.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/navy_900</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="titleTextAppearance">@style/TextAppearance.FarPay.H4</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.FarPay.Body2</item>
+        <item name="subtitleTextColor">@color/text_on_dark_secondary</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+
+    <!-- ============================
+         CHIPS
+    ============================= -->
+    <style name="Widget.FarPay.Chip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipMinHeight">32dp</item>
+        <item name="chipCornerRadius">8dp</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipStrokeColor">@color/border_default</item>
+        <item name="chipBackgroundColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.FarPay.Caption</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="rippleColor">#0A000000</item>
+    </style>
+
+    <!-- Status chip — non-clickable badge -->
+    <style name="Widget.FarPay.Chip.Status" parent="Widget.FarPay.Chip">
+        <item name="chipMinHeight">24dp</item>
+        <item name="chipCornerRadius">6dp</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="chipStartPadding">8dp</item>
+        <item name="chipEndPadding">8dp</item>
+    </style>
+
+    <!-- Filter chip — payment method selector -->
+    <style name="Widget.FarPay.Chip.Filter" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipMinHeight">36dp</item>
+        <item name="chipCornerRadius">10dp</item>
+        <item name="chipStrokeWidth">1.5dp</item>
+        <item name="chipStrokeColor">@color/chip_stroke_color</item>
+        <item name="chipBackgroundColor">@color/chip_bg_color</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="android:textAppearance">@style/TextAppearance.FarPay.Caption</item>
+        <item name="checkedIconVisible">false</item>
+    </style>
+
+    <!-- ============================
+         BOTTOM SHEET
+    ============================= -->
+    <style name="Widget.FarPay.BottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearance">@style/Shape.FarPay.BottomSheetTop</item>
+        <item name="elevation">16dp</item>
+    </style>
+
+    <!-- ============================
+         SNACKBAR
+         MaterialSnackbar uses backgroundTint + shapeAppearance.
+         android:background is ignored. android:layout_margin is invalid in a style.
+    ============================= -->
+    <style name="Widget.FarPay.Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="backgroundTint">@color/grey_800</item>
+        <item name="shapeAppearance">@style/Shape.FarPay.Snackbar</item>
+        <item name="animationMode">slide</item>
+        <item name="actionTextColorAlpha">1</item>
+    </style>
+
+    <!-- Snackbar action button -->
+    <style name="Widget.FarPay.SnackbarButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/brand_accent</item>
+        <item name="android:textAppearance">@style/TextAppearance.FarPay.Button</item>
+        <item name="rippleColor">#1A00D4AA</item>
+    </style>
+
+    <!-- Optional snackbar inner content style -->
+    <style name="Widget.FarPay.SnackbarContent" parent="Widget.MaterialComponents.Snackbar.FullWidth">
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <!-- ============================
+         DIALOGS
+         ThemeOverlay applied via materialAlertDialogTheme in themes.xml.
+         Parent must be ThemeOverlay.MaterialComponents.MaterialAlertDialog.
+    ============================= -->
+    <style name="ThemeOverlay.FarPay.Dialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="shapeAppearanceOverlay">@style/Shape.FarPay.Large</item>
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.FarPay.Button.DialogPositive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.FarPay.Button.DialogNegative</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.FarPay.Button.Text</item>
+    </style>
+
+    <!-- ============================
+         DIVIDER
+    ============================= -->
+    <style name="Widget.FarPay.Divider">
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <!-- ============================
+         TAB LAYOUT
+         No MDC2 theme-level attr exists for TabLayout.
+         Apply style="@style/Widget.FarPay.TabLayout" directly in XML.
+    ============================= -->
+    <style name="Widget.FarPay.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorColor">@color/brand_accent</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabSelectedTextColor">@color/navy_800</item>
+        <item name="tabTextColor">@color/text_hint</item>
+        <item name="tabTextAppearance">@style/TextAppearance.FarPay.Subtitle2</item>
+        <item name="android:background">@color/white</item>
+        <item name="tabRippleColor">#1A00D4AA</item>
+    </style>
+
+    <!-- ============================
+         PROGRESS BAR
+    ============================= -->
+    <style name="Widget.FarPay.ProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateTint">@color/brand_accent</item>
+    </style>
+
+    <style name="Widget.FarPay.ProgressBar.Linear" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressTint">@color/brand_accent</item>
+        <item name="android:progressBackgroundTint">@color/grey_100</item>
+        <item name="android:indeterminateTint">@color/brand_accent</item>
+    </style>
+
+    <!-- ============================
+         SWITCH
+    ============================= -->
+    <style name="Widget.FarPay.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="thumbTint">@color/switch_thumb_color</item>
+        <item name="trackTint">@color/switch_track_color</item>
+    </style>
+
+    <!-- ============================
+         CHECKBOX
+    ============================= -->
+    <style name="Widget.FarPay.CheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="buttonTint">@color/checkbox_tint_color</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textAppearance">@style/TextAppearance.FarPay.Body2</item>
+    </style>
+
+    <!-- ============================
+         RADIO BUTTON
+    ============================= -->
+    <style name="Widget.FarPay.RadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="buttonTint">@color/radio_tint_color</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textAppearance">@style/TextAppearance.FarPay.Body2</item>
+    </style>
+
+    <!-- ============================
+         FAB
+    ============================= -->
+    <style name="Widget.FarPay.FAB" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/brand_accent</item>
+        <item name="tint">@color/navy_900</item>
+        <item name="elevation">8dp</item>
+        <item name="fabSize">normal</item>
+        <item name="shapeAppearance">@style/Shape.FarPay.Medium</item>
+    </style>
+
+</resources>
