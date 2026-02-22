@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============================
+         PRIMARY — Deep Navy
+    ============================= -->
+    <color name="navy_900">#08122C</color>
+    <color name="navy_800">#0D1E45</color>
+    <color name="navy_700">#112559</color>
+    <color name="navy_600">#1A3370</color>
+
+    <!-- ============================
+         ACCENT — Electric Teal
+    ============================= -->
+    <color name="teal_500">#00D4AA</color>
+    <color name="teal_400">#1EEFC0</color>
+    <color name="teal_600">#00B592</color>
+
+    <!-- Semantic brand aliases — use these in all styles/layouts -->
+    <color name="brand_accent">@color/teal_500</color>
+    <color name="brand_accent_dark">@color/teal_600</color>
+    <color name="brand_accent_light">@color/teal_400</color>
+
+    <!-- ============================
+         GOLD — Warm Highlight
+    ============================= -->
+    <color name="gold_400">#F5C842</color>
+    <color name="gold_500">#E8B820</color>
+
+    <!-- ============================
+         NEUTRALS
+    ============================= -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey_50">#F7F9FC</color>
+    <color name="grey_100">#EDF1F7</color>
+    <color name="grey_200">#D6DDE8</color>
+    <color name="grey_300">#B8C4D4</color>
+    <color name="grey_400">#94A3B8</color>
+    <color name="grey_500">#7B8EA6</color>
+    <color name="grey_600">#64748B</color>
+    <color name="grey_700">#475569</color>
+    <color name="grey_800">#1E293B</color>
+    <color name="grey_900">#0F172A</color>
+
+    <!-- ============================
+         SEMANTIC / STATUS
+    ============================= -->
+    <color name="success">#00C48C</color>
+    <color name="success_bg">#1A00C48C</color>
+    <color name="success_light">#E6FBF5</color>
+
+    <color name="warning">#FFBA08</color>
+    <color name="warning_bg">#1AFFBA08</color>
+    <color name="warning_light">#FFF8E1</color>
+
+    <color name="error">#FF4757</color>
+    <color name="error_bg">#1AFF4757</color>
+    <color name="error_light">#FFEBEE</color>
+
+    <color name="info">#3B82F6</color>
+    <color name="info_bg">#1A3B82F6</color>
+    <color name="info_light">#EBF4FF</color>
+
+    <!-- ============================
+         SURFACES
+    ============================= -->
+    <color name="surface_primary">#F7F9FC</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="surface_dark">#0D1E45</color>
+    <color name="overlay_dark">#80000000</color>
+    <color name="overlay_light">#40FFFFFF</color>
+    <color name="scrim">#99000000</color>
+
+    <!-- ============================
+         TEXT
+    ============================= -->
+    <color name="text_primary">#0F1A35</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_hint">#94A3B8</color>
+    <color name="text_disabled">#B8C4D4</color>
+    <color name="text_on_dark">#FFFFFF</color>
+    <color name="text_on_teal">#08122C</color>
+    <color name="text_on_dark_secondary">#80FFFFFF</color>
+
+    <!-- ============================
+         NAVIGATION
+    ============================= -->
+    <color name="nav_active">@color/teal_500</color>
+    <color name="nav_inactive">#94A3B8</color>
+    <color name="nav_icon_active">#08122C</color>
+    <color name="nav_background">#FFFFFF</color>
+    <color name="nav_indicator">#1A00D4AA</color>
+
+    <!-- ============================
+         DIVIDERS / BORDERS
+    ============================= -->
+    <color name="divider">#EDF1F7</color>
+    <color name="border_default">#D6DDE8</color>
+    <color name="border_focused">@color/teal_500</color>
+    <color name="border_error">@color/error</color>
+
+</resources>

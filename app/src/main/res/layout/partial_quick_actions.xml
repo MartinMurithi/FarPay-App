@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="@font/sora_bold"
+        android:text="@string/label_quick_actions"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <!-- Send -->
+        <LinearLayout android:id="@+id/action_send"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical"
+            android:gravity="center" android:clickable="true" android:focusable="true">
+            <FrameLayout android:layout_width="@dimen/action_icon_container" android:layout_height="@dimen/action_icon_container">
+                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_action_circle_teal" />
+                <ImageView android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center"
+                    android:src="@drawable/ic_send" android:contentDescription="@null" app:tint="@color/teal_500" />
+            </FrameLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:fontFamily="@font/dm_sans_medium"
+                android:text="@string/action_send" android:textColor="@color/text_primary" android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Receive -->
+        <LinearLayout android:id="@+id/action_receive"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical"
+            android:gravity="center" android:clickable="true" android:focusable="true">
+            <FrameLayout android:layout_width="@dimen/action_icon_container" android:layout_height="@dimen/action_icon_container">
+                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_action_circle_gold" />
+                <ImageView android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center"
+                    android:src="@drawable/ic_receive" android:contentDescription="@null" app:tint="@color/gold_500" />
+            </FrameLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:fontFamily="@font/dm_sans_medium"
+                android:text="@string/action_receive" android:textColor="@color/text_primary" android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Pay Bills -->
+        <LinearLayout android:id="@+id/action_pay"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical"
+            android:gravity="center" android:clickable="true" android:focusable="true">
+            <FrameLayout android:layout_width="@dimen/action_icon_container" android:layout_height="@dimen/action_icon_container">
+                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_action_circle_blue" />
+                <ImageView android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center"
+                    android:src="@drawable/ic_bill" android:contentDescription="@null" app:tint="@color/info" />
+            </FrameLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:fontFamily="@font/dm_sans_medium"
+                android:text="@string/action_pay_bills" android:textColor="@color/text_primary" android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- History -->
+        <LinearLayout android:id="@+id/action_history"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical"
+            android:gravity="center" android:clickable="true" android:focusable="true">
+            <FrameLayout android:layout_width="@dimen/action_icon_container" android:layout_height="@dimen/action_icon_container">
+                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_action_circle" />
+                <ImageView android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center"
+                    android:src="@drawable/ic_history" android:contentDescription="@null" app:tint="@color/text_secondary" />
+            </FrameLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:fontFamily="@font/dm_sans_medium"
+                android:text="@string/action_history" android:textColor="@color/text_primary" android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

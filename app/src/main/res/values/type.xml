@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Fonts live in res/font/ as downloadable font XMLs.
+        @font/sora      = Sora Regular 400
+        @font/sora_semibold = Sora SemiBold 600
+        @font/sora_bold = Sora Bold 700
+        @font/dm_sans   = DM Sans Regular 400
+        @font/dm_sans_medium = DM Sans Medium 500
+        @font/dm_sans_bold   = DM Sans Bold 700
+    -->
+
+    <!-- H1 — 34sp Sora Bold -->
+    <style name="TextAppearance.FarPay.H1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/sora_bold</item>
+        <item name="android:fontFamily">@font/sora_bold</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:lineSpacingMultiplier">1.15</item>
+    </style>
+
+    <!-- H2 — 28sp Sora Bold -->
+    <style name="TextAppearance.FarPay.H2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/sora_bold</item>
+        <item name="android:fontFamily">@font/sora_bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <!-- H3 — 22sp Sora Bold -->
+    <style name="TextAppearance.FarPay.H3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/sora_bold</item>
+        <item name="android:fontFamily">@font/sora_bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:letterSpacing">-0.005</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <!-- H4 — 18sp Sora Bold -->
+    <style name="TextAppearance.FarPay.H4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/sora_bold</item>
+        <item name="android:fontFamily">@font/sora_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <!-- H5 — 16sp Sora Bold -->
+    <style name="TextAppearance.FarPay.H5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/sora_bold</item>
+        <item name="android:fontFamily">@font/sora_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <!-- Subtitle1 — 16sp DM Sans Bold -->
+    <style name="TextAppearance.FarPay.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/dm_sans_bold</item>
+        <item name="android:fontFamily">@font/dm_sans_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <!-- Subtitle2 — 14sp DM Sans Bold -->
+    <style name="TextAppearance.FarPay.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/dm_sans_bold</item>
+        <item name="android:fontFamily">@font/dm_sans_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <!-- Body1 — 16sp DM Sans Regular -->
+    <style name="TextAppearance.FarPay.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/dm_sans</item>
+        <item name="android:fontFamily">@font/dm_sans</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+    </style>
+
+    <!-- Body2 — 14sp DM Sans Regular -->
+    <style name="TextAppearance.FarPay.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/dm_sans</item>
+        <item name="android:fontFamily">@font/dm_sans</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+    </style>
+
+    <!-- Caption — 12sp DM Sans Regular -->
+    <style name="TextAppearance.FarPay.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/dm_sans</item>
+        <item name="android:fontFamily">@font/dm_sans</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.025</item>
+        <item name="android:textColor">@color/text_hint</item>
+    </style>
+
+    <!-- Caption error variant -->
+    <style name="TextAppearance.FarPay.Caption.Error" parent="TextAppearance.FarPay.Caption">
+        <item name="android:textColor">@color/error</item>
+    </style>
+
+    <!-- Overline — 11sp uppercase DM Sans -->
+    <style name="TextAppearance.FarPay.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/dm_sans</item>
+        <item name="android:fontFamily">@font/dm_sans</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/text_hint</item>
+    </style>
+
+    <!-- Button — 15sp DM Sans Bold -->
+    <style name="TextAppearance.FarPay.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/dm_sans_bold</item>
+        <item name="android:fontFamily">@font/dm_sans_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Logo — 22sp Sora Bold, wide tracking -->
+    <style name="TextAppearance.FarPay.Logo">
+        <item name="fontFamily">@font/sora_bold</item>
+        <item name="android:fontFamily">@font/sora_bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Amount — 40sp Sora Bold (on dark background) -->
+    <style name="TextAppearance.FarPay.Amount">
+        <item name="fontFamily">@font/sora_bold</item>
+        <item name="android:fontFamily">@font/sora_bold</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Amount on light background -->
+    <style name="TextAppearance.FarPay.Amount.Dark">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <!-- NavLabel — 11sp DM Sans Bold (bottom nav) -->
+    <style name="TextAppearance.FarPay.NavLabel">
+        <item name="fontFamily">@font/dm_sans_bold</item>
+        <item name="android:fontFamily">@font/dm_sans_bold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

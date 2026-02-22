@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FarPayCardView">
+        <attr name="cardAccentColor" format="color" />
+        <attr name="cardVariant" format="enum">
+            <enum name="standard" value="0" />
+            <enum name="dark" value="1" />
+            <enum name="accent" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="StatusChip">
+        <attr name="statusType" format="enum">
+            <enum name="success" value="0" />
+            <enum name="error" value="1" />
+            <enum name="warning" value="2" />
+            <enum name="info" value="3" />
+            <enum name="pending" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PaymentMethodView">
+        <attr name="methodIcon" format="reference" />
+        <attr name="methodName" format="string" />
+        <attr name="methodSelected" format="boolean" />
+    </declare-styleable>
+</resources>

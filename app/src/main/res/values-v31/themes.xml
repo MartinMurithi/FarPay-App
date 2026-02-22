@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.FarPay" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/navy_800</item>
+        <item name="colorPrimaryVariant">@color/navy_900</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/brand_accent</item>
+        <item name="colorSecondaryVariant">@color/brand_accent_dark</item>
+        <item name="colorOnSecondary">@color/text_on_teal</item>
+
+        <item name="android:colorBackground">@color/surface_primary</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/white</item>
+
+        <item name="android:statusBarColor">@color/navy_900</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/nav_background</item>
+
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <item name="android:forceDarkAllowed" tools:targetApi="q" xmlns:tools="http://schemas.android.com/tools">false</item>
+
+        <item name="colorControlHighlight">#1A00D4AA</item>
+
+        <item name="textAppearanceHeadline1">@style/TextAppearance.FarPay.H1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.FarPay.H2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.FarPay.H3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.FarPay.H4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.FarPay.H5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.FarPay.H5</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.FarPay.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.FarPay.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.FarPay.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.FarPay.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.FarPay.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.FarPay.Overline</item>
+        <item name="textAppearanceButton">@style/TextAppearance.FarPay.Button</item>
+
+        <item name="shapeAppearanceLargeComponent">@style/Shape.FarPay.Large</item>
+        <item name="shapeAppearanceMediumComponent">@style/Shape.FarPay.Medium</item>
+        <item name="shapeAppearanceSmallComponent">@style/Shape.FarPay.Small</item>
+
+        <item name="materialButtonStyle">@style/Widget.FarPay.Button.Primary</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.FarPay.Button.Secondary</item>
+        <item name="textInputStyle">@style/Widget.FarPay.TextInput</item>
+        <item name="bottomNavigationStyle">@style/Widget.FarPay.BottomNav</item>
+        <item name="materialCardViewStyle">@style/Widget.FarPay.Card</item>
+        <item name="chipStyle">@style/Widget.FarPay.Chip</item>
+        <item name="snackbarStyle">@style/Widget.FarPay.Snackbar</item>
+        <item name="toolbarStyle">@style/Widget.FarPay.Toolbar</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.FarPay.Dialog</item>
+        <item name="floatingActionButtonStyle">@style/Widget.FarPay.FAB</item>
+
+        <item name="android:checkboxStyle">@style/Widget.FarPay.CheckBox</item>
+        <item name="android:radioButtonStyle">@style/Widget.FarPay.RadioButton</item>
+        <item name="android:progressBarStyle">@style/Widget.FarPay.ProgressBar</item>
+        <item name="android:progressBarStyleHorizontal">@style/Widget.FarPay.ProgressBar.Linear</item>
+
+    </style>
+
+    <style name="Theme.FarPay.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/navy_900</item>
+
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_farpay_logo</item>
+
+        <item name="postSplashScreenTheme">@style/Theme.FarPay</item>
+    </style>
+
+</resources>
