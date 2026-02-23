@@ -44,7 +44,6 @@ public class PayWebViewFragment extends Fragment {
 
     @SuppressLint("SetJavaScriptEnabled")
     private void setupWebView() {
-        // PesaPal's checkout page requires JavaScript to function
         binding.webView.getSettings().setJavaScriptEnabled(true);
         binding.webView.getSettings().setDomStorageEnabled(true);
         binding.webView.getSettings().setLoadsImagesAutomatically(true);
@@ -59,10 +58,8 @@ public class PayWebViewFragment extends Fragment {
             public void onPageFinished(WebView view, String url) {
                 binding.webViewLoader.setVisibility(View.GONE);
 
-                // DETECTION LOGIC: If the URL is your ngrok callback, the user finished paying
                 if (url.contains("ngrok-free.app") || url.contains("api/v1/payments/callback")) {
                     Toast.makeText(getContext(), "Processing payment confirmation...", Toast.LENGTH_LONG).show();
-                    // Close the payment flow and return to home/history
                     if (getActivity() != null) {
                         getActivity().finish();
                     }

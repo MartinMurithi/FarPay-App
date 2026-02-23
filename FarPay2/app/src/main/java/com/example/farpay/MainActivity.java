@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                     return false; // False = Don't highlight the 'Pay' icon
                 }
 
-                // For all other tabs (Home, History, Account), do the default fragment swap
+                // For all other tabs (Home, History, Account)
                 return NavigationUI.onNavDestinationSelected(item, navController);
             });
         }

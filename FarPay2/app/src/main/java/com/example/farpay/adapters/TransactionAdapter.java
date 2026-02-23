@@ -36,7 +36,6 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
         holder.binding.tvTransactionName.setText(item.getTransactionRef());
         holder.binding.tvAmount.setText("KES " + String.format("%.2f", item.getAmount()));
 
-        // FIX: Time Formatting
         holder.binding.tvTransactionDate.setText(formatDate(item.getCreatedAt()));
 
         String status = item.getTransactionStatus();
@@ -56,7 +55,7 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
     // Helper to turn DB timestamp into "MMM dd, hh:mm a"
     private String formatDate(String rawDate) {
         try {
-            // Adjust this pattern to match your FastAPI format (usually ISO 8601)
+
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.getDefault());
             sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
             Date date = sdf.parse(rawDate);

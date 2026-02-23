@@ -35,7 +35,6 @@ public class PayStep1Fragment extends Fragment {
     }
 
     // ─── Quick-select chips ──────────────────────────────────────────────────
-
     private void setupQuickAmountChips() {
         binding.chip500.setOnClickListener(v -> fillAmount("500"));
         binding.chip1000.setOnClickListener(v -> fillAmount("1000"));
@@ -62,7 +61,6 @@ public class PayStep1Fragment extends Fragment {
         String amountStr   = binding.etAmount.getText().toString().trim();
         String description = binding.etDescription.getText().toString().trim();
 
-        // Convert amount to float to match the argType in your XML Nav Graph
         float amountValue = 0;
         try {
             amountValue = Float.parseFloat(amountStr);
@@ -74,7 +72,7 @@ public class PayStep1Fragment extends Fragment {
         args.putString("lname",       lastName);
         args.putString("email",       email);
         args.putString("phone",       phone);
-        args.putFloat("amount",       amountValue); // Matching float type
+        args.putFloat("amount",       amountValue);
         args.putString("description", description);
 
         // 3. Navigate

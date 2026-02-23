@@ -8,7 +8,6 @@ public class Transaction {
     private String transaction_status;
     private String created_at;
 
-    // Getters
     public double getAmount() { return amount; }
     public String getStatus() { return transaction_status; }
     public String getRef() { return transaction_ref; }

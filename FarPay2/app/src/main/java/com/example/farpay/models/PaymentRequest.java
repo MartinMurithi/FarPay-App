@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class PaymentRequest {
 
-    // These @SerializedName tags MUST match your Python PaymentCreate exactly
+    // @SerializedName tags MUST match your Python PaymentCreate exactly
     @SerializedName("first_name")
     private String firstName;
 
@@ -28,7 +28,6 @@ public class PaymentRequest {
         this.amount = amount;
     }
 
-    // Getters and Setters (Optional for Retrofit, but good practice)
     public String getFirstName() { return firstName; }
     public String getLastName() { return lastName; }
     public String getEmail() { return email; }

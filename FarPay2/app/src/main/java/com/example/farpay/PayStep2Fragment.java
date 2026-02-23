@@ -45,13 +45,13 @@ public class PayStep2Fragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            // FIX: Ensure these match the keys sent from Fragment 1 exactly
+            // Ensure these match the keys sent from Fragment 1 exactly
             fName = getArguments().getString("fname", "");
             lName = getArguments().getString("lname", "");
             email = getArguments().getString("email", "");
             phone = getArguments().getString("phone", "");
 
-            // FIX: If NavGraph uses float, we catch it as a float then convert to double
+            // If NavGraph uses float, we catch it as a float then convert to double
             amount = getArguments().getFloat("amount", 0.0f);
         }
     }
@@ -82,21 +82,15 @@ public class PayStep2Fragment extends Fragment {
     }
 
     private void setupMethodCards() {
-        // 1. INITIALIZE the bindings first (This was likely missing or done out of order)
+        // 1. INITIALIZE the bindings first
         pesapalBinding = ItemPayMethodBinding.bind(binding.cardPesapal.getRoot());
 //        visaBinding    = ItemPayMethodBinding.bind(binding.cardVisa.getRoot());
         bankBinding    = ItemPayMethodBinding.bind(binding.cardBank.getRoot());
 
-        // 2. NOW you can safely access the fields
         // Setup PesaPal
         pesapalBinding.ivMethodIcon.setImageResource(R.drawable.ic_pesapal);
         pesapalBinding.tvMethodName.setText("PesaPal");
         pesapalBinding.methodRoot.setOnClickListener(v -> selectMethod("pesapal"));
-
-        // Setup Visa/Card
-//        visaBinding.ivMethodIcon.setImageResource(R.drawable.ic_pay);
-//        visaBinding.tvMethodName.setText("Card Payment");
-//        visaBinding.methodRoot.setOnClickListener(v -> selectMethod("card"));
 
         // Setup Bank
         bankBinding.ivMethodIcon.setImageResource(R.drawable.ic_bank);

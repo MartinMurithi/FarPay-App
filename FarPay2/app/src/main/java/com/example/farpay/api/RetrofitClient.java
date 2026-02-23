@@ -4,7 +4,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
-    // PASTE YOUR NGROK URL HERE
+    // NGROK HERE
     private static final String BASE_URL = "https://unopined-lorelei-unglacial.ngrok-free.dev/";
     private static Retrofit retrofit = null;
 
