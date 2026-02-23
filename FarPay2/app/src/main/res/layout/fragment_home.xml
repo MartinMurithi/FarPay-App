@@ -26,6 +26,7 @@
                 android:orientation="vertical">
 
                 <include
+                    android:id="@+id/balance_card"
                     layout="@layout/partial_balance_card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -34,6 +35,7 @@
                     android:layout_marginBottom="8dp" />
 
                 <include
+                    android:id="@+id/quick_actions"
                     layout="@layout/partial_quick_actions"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -41,6 +43,7 @@
                     android:layout_marginTop="16dp" />
 
                 <include
+                    android:id="@+id/payment_methods"
                     layout="@layout/partial_payment_methods"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -18,4 +18,6 @@ public class Transaction {
     public String getTransactionRef() { return transaction_ref; }
 
     public String getPhone() {return phone;}
+
+    public String getTransactionStatus() {return transaction_status;}
 }

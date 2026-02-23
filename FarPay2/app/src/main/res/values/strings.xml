@@ -124,4 +124,6 @@
     <string name="cd_pay_method_icon">Payment method icon</string>
     <string name="cd_selected">Selected</string>
     <string name="cd_not_selected">Not selected</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="no_transaction_history">No transaction history</string>
 </resources>

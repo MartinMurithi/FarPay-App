@@ -18,13 +18,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <View android:layout_width="match_parent" android:layout_height="match_parent"
-            android:background="@drawable/bg_transaction_icon" />
+<!--        <View android:layout_width="match_parent" android:layout_height="match_parent"-->
+<!--            android:background="@drawable/ic_transaction_icon" />-->
 
         <ImageView
             android:id="@+id/iv_transaction_icon"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:contentDescription="@string/cd_transaction_icon"
             android:src="@drawable/ic_send" />
