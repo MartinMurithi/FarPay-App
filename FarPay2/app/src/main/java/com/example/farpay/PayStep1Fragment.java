@@ -54,16 +54,30 @@ public class PayStep1Fragment extends Fragment {
     private void onContinue() {
         if (!validate()) return;
 
+        // 1. Extract all the data from the UI
         String firstName   = binding.etFirstName.getText().toString().trim();
         String lastName    = binding.etLastName.getText().toString().trim();
-        String amount      = binding.etAmount.getText().toString().trim();
+        String email       = binding.etEmail.getText().toString().trim();
+        String phone       = binding.etPhone.getText().toString().trim();
+        String amountStr   = binding.etAmount.getText().toString().trim();
         String description = binding.etDescription.getText().toString().trim();
 
+        // Convert amount to float to match the argType in your XML Nav Graph
+        float amountValue = 0;
+        try {
+            amountValue = Float.parseFloat(amountStr);
+        } catch (NumberFormatException ignored) {}
+
+        // 2. Create the Bundle with keys that match Step 2's expectations
         Bundle args = new Bundle();
-        args.putString("payerName",   firstName + " " + lastName);
-        args.putString("amount",      amount);
+        args.putString("fname",       firstName);
+        args.putString("lname",       lastName);
+        args.putString("email",       email);
+        args.putString("phone",       phone);
+        args.putFloat("amount",       amountValue); // Matching float type
         args.putString("description", description);
 
+        // 3. Navigate
         NavHostFragment.findNavController(this)
                 .navigate(R.id.action_step1_to_step2, args);
     }
@@ -118,7 +132,7 @@ public class PayStep1Fragment extends Fragment {
         if (amount <= 0) {
             binding.etAmount.setError(getString(R.string.error_enter_amount));
             ok = false;
-        } else if (amount < 10) {
+        } else if (amount < 1) {
             binding.etAmount.setError(getString(R.string.error_amount_min));
             ok = false;
         } else {

@@ -62,4 +62,13 @@ dependencies {
 
     // Image loading
     implementation 'io.coil-kt:coil:2.6.0'
+
+    // Retrofit for networking
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+    // Gson converter to turn JSON into Java Objects
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // Optional: Logging (helps you see the API calls in your console)
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
 }

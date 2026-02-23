@@ -22,18 +22,26 @@
         android:id="@+id/payStep2Fragment"
         android:name="com.example.farpay.PayStep2Fragment"
         android:label="PayStep2">
+        <argument android:name="fname" app:argType="string" />
+        <argument android:name="lname" app:argType="string" />
+        <argument android:name="email" app:argType="string" />
+        <argument android:name="phone" app:argType="string" />
+        <argument android:name="amount" app:argType="float" />
+
+        <action
+            android:id="@+id/action_payStep2_to_webView"
+            app:destination="@id/payWebViewFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/payWebViewFragment"
+        android:name="com.example.farpay.PayWebViewFragment"
+        android:label="Payment Page">
         <argument
-            android:name="payerName"
-            app:argType="string"
-            android:defaultValue="" />
-        <argument
-            android:name="amount"
-            app:argType="string"
-            android:defaultValue="0" />
-        <argument
-            android:name="description"
-            app:argType="string"
-            android:defaultValue="" />
+            android:name="payment_url"
+            app:argType="string" />
     </fragment>
 
 </navigation>
